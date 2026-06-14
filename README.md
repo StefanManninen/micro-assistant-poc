@@ -126,3 +126,15 @@ Every learned shortcut is stored locally, weighted explicitly, and can be inspec
 No hidden autonomous behavior.  
 No black-box agent swarm.  
 No unnecessary cloud dependency.
+
+## Support
+
+This is an experimental proof-of-concept.
+
+No support is promised.  
+Issues may be ignored.  
+Pull requests may be ignored.
+
+## License
+
+MIT License. See [LICENSE](LICENSE).
