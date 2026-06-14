@@ -41,13 +41,13 @@ As the assistant is used, repeated patterns are promoted from external tool usag
 
 When an input is received, the system evaluates the local policy state before invoking any model weights:
 
-1. 🟢 **Full Intuition Hit**
+1. 🟢 **Full Intuition Hit**  
    `route_weight >= 2.0 && answer_weight >= 2.0`
 
-   Returns the verified answer directly from SQLite.
+   Returns the verified answer directly from SQLite.  
    **Ollama skipped. Latency: ~0.8 ms.**
 
-2. 🟡 **Routing Intuition Hit**
+2. 🟡 **Routing Intuition Hit**  
    `route_weight >= 2.0 && answer_weight < 2.0`
 
    Bypasses `gemma3:270m` intent analysis and directly triggers the required tool, such as `browser_search`.
