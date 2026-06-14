@@ -113,3 +113,16 @@ Run the assistant:
 ```bash
 python core/orchestrator.py
 ```
+
+## Philosophy
+
+This project follows a simple principle:
+
+> AI should assist understanding, not replace it.
+
+The assistant is intentionally transparent and traceable.  
+Every learned shortcut is stored locally, weighted explicitly, and can be inspected or cleaned.
+
+No hidden autonomous behavior.  
+No black-box agent swarm.  
+No unnecessary cloud dependency.
