@@ -25,16 +25,16 @@ As the assistant is used, repeated patterns are promoted from external tool usag
 
 ## 🛠️ Architecture
 
-1. **gemma3:270m** — Voice & Intent
+1. **gemma3:270m** — Voice & Intent  
    Conversational front-end and basic intent detection.
 
-2. **functiongemma** — Tool Router
+2. **functiongemma** — Tool Router  
    Function-calling model used to select tools and generate structured JSON actions.
 
-3. **SQLite Policy Layer** — Local Intuition
+3. **SQLite Policy Layer** — Local Intuition  
    Stores reinforced routes, cached answers, usage stats, and feedback weights.
 
-4. **Cleaner / Critic Layer** — Immune System
+4. **Cleaner / Critic Layer** — Immune System  
    Detects bad cached answers, noisy memories, and weak training candidates before they become permanent behavior.
 
 ## 🔄 Execution Flow Matrix
@@ -80,7 +80,7 @@ store text → search text → inject text into the prompt
 
 This project explores a different path:
 
-> **Memory should not only be retrieved.**
+> **Memory should not only be retrieved.**  
 > **Useful behavior should eventually be learned.**
 
 The long-term goal is a small personal assistant that becomes better at understanding its user, their systems, and their preferred workflows — while reducing external calls instead of increasing them.
